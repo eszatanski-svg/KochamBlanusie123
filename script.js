@@ -46,15 +46,13 @@ const CONFIG = {
       text: "Trzy lata za nami a ja nadal mam wrażenie że my dopiero zaczynamy ."
     }
   ],
-  letter: `Minęły już trzy lata.
+  letter: `To już 3 lata za nami 
 
-A ja nadal bardzo lubię ten moment, kiedy widzę Twój uśmiech i świat robi się spokojniejszy.
+Blanusia za nami już 3 lata i przez te 3 lata ani razu nie zwątpiłem że nam się nie uda poprostu zawsze wierzyłem w to że jak coś pójdzie nie tak to i tak damy radę bo się kochamy. Kocham cię bardzo mocno i chciałbym żebyś o tym wiedziała bo to coś więcej niż miłość to jest uczucie nie do opisania. Każdego dnia jak się tylko spotkamy odrazu jestem szczęśliwszą osobą bardzo się cieszę że cię mam bo każdy w życiu potrzebuje osoby przy której może się czuć tak swobodnie jak ja przy tobie i nie bedzie oceniać. Jesteś przekochana i nigdy bym cię nie chciał stracić bo jesteś tym  co mnie trzyma w przekonaniu że miłość nie jest przelotna tylko mocna i ciągła , mam nadzieję że dotrwamy kiedyś do takiego wieku że będziemy mogli razem usiąść napić się kawy i powspominać jak to było w tych nastoletnich latach jak bardzo się kochaliśmy i nasze randki i wszystko co najlepsze związane z nami . Przepraszam jeśli niekiedy zrobię coś ze sprawi ci przykrość jesteś osobą której nigdy nie powinna się dziać jaka kolwiek smutna sytuacja bo jesteś w huj dobra osoba i nie znam lepszej osoby na świecie jesteś poprostu śliczna miła kochana troskliwa wyrozumiała szczera slodka cierpliwa pomocna zawsze mnie wspierasz i jesteś poprostu idealna. Ideał kobiety jaki szukałem przez całe życie.
 
-Dziękuję Ci za każdy dzień, za cierpliwość, za śmiech, za rozmowy, za przytulanie i za wszystkie małe rzeczy, których nie da się dobrze opisać, ale czuje się je od razu.
+Dziękuje ci za to ze jesteś dla mnie taka dobra i dajesz mi tyle szans.
 
-Nie obiecuję, że zawsze będzie idealnie. Obiecuję, że będę wybierał Ciebie, dbał o nas i szukał szczęścia w tych zwykłych chwilach, które z Tobą są zupełnie niezwykłe.
-
-Kocham Cię. Dziękuję za nasze 3 lata.`,
+Kocham cię <3`,
   coupons: [
     {
       title: "Kolacja",

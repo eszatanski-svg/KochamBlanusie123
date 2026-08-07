@@ -15,7 +15,7 @@ const CONFIG = {
       title: "Zaczęliśmy być razem - Barbie",
       icon: "01",
       image: "assets/photos/start-barbie.jpg",
-      text: "Ten dzień zmienił zwykły kalendarz w coś, do czego chce się wracać. Różowy klimat pasuje tu aż za dobrze."
+      text: "Ten dzień zmienił zwykły kalendarz w coś do czego chce się."
     },
     {
       date: "Pierwsze tygodnie",
@@ -29,7 +29,7 @@ const CONFIG = {
       title: "Świat był trochę bardziej nasz",
       icon: "03",
       image: "assets/photos/image12.jpg",
-      text: "Nie chodziło tylko o miejsce. Chodziło o to, że byliśmy tam razem."
+      text: "Nie chodziło tylko o miejsce. Chodziło o to że byliśmy tam razem."
     },
     {
       date: "Codzienność",
@@ -43,7 +43,7 @@ const CONFIG = {
       title: "Trzy lata razem",
       icon: "05",
       image: "assets/photos/photo-1.jpg",
-      text: "Trzy lata za nami, a ja nadal mam wrażenie, że to dopiero początek."
+      text: "Trzy lata za nami a ja nadal mam wrażenie że my dopiero zaczynamy ."
     }
   ],
   letter: `Minęły już trzy lata.

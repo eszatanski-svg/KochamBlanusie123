@@ -1,5 +1,5 @@
 const CONFIG = {
-  partnerName: "Kochanie",
+  partnerName: "Blanusia",
   anniversaryDate: "2023-08-09T00:00:00+02:00",
   unlockCode: "09082023",
   quizQuestion: "Gdzie była nasza pierwsza randka?",
@@ -19,10 +19,10 @@ const CONFIG = {
     },
     {
       date: "Pierwsze tygodnie",
-      title: "Nasze małe rytuały",
+      title: "Nasze pierwsze kroki razem",
       icon: "02",
       image: "assets/photos/photo-2.jpg",
-      text: "Rozmowy, wiadomości, śmiech i te drobiazgi, które szybko stały się tylko nasze."
+      text: "Rozmowy, wiadomości i śmiech, które szybko stały się tylko nasze."
     },
     {
       date: "Pierwszy wyjazd",
@@ -36,7 +36,7 @@ const CONFIG = {
       title: "Najładniejsze są proste chwile",
       icon: "04",
       image: "assets/photos/image11.jpg",
-      text: "Zwykły dzień potrafi być wyjątkowy, kiedy obok jest właściwa osoba."
+      text: "Zwykły dzień moze sie zmienic w cudowny tylko jesli jestes ty obok Blanusia"
     },
     {
       date: "09.08.2026",

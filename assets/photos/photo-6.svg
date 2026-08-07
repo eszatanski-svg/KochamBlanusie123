@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Miejsce na Wasze zdjęcie">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#302033"/>
+      <stop offset="0.44" stop-color="#9a4562"/>
+      <stop offset="1" stop-color="#f8c95e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g opacity="0.7">
+    <circle cx="160" cy="130" r="4" fill="#fff"/>
+    <circle cx="360" cy="90" r="5" fill="#fff"/>
+    <circle cx="920" cy="155" r="4" fill="#fff"/>
+    <circle cx="1040" cy="420" r="5" fill="#fff"/>
+    <circle cx="258" cy="540" r="4" fill="#fff"/>
+  </g>
+  <rect x="238" y="130" width="724" height="430" rx="36" fill="#ffffff" opacity="0.82"/>
+  <path d="M600 430 C513 360 410 302 444 214 C466 157 548 159 600 222 C652 159 734 157 756 214 C790 302 687 360 600 430 Z" fill="#f46b93"/>
+  <text x="600" y="635" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" fill="#ffffff">WSTAW ZDJĘCIE 6</text>
+  <text x="600" y="688" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#fff7ef">assets/photos/photo-6</text>
+</svg>

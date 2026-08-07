@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Miejsce na Wasze zdjęcie">
+  <defs>
+    <linearGradient id="g" x1="1" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8bb8ff"/>
+      <stop offset="0.54" stop-color="#ffd1b8"/>
+      <stop offset="1" stop-color="#302033"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <circle cx="230" cy="174" r="78" fill="#ffffff" opacity="0.35"/>
+  <circle cx="985" cy="520" r="116" fill="#ffffff" opacity="0.28"/>
+  <rect x="224" y="150" width="752" height="430" rx="34" fill="#ffffff" opacity="0.78"/>
+  <path d="M420 450 L560 292 L654 396 L725 318 L836 450 Z" fill="#302033" opacity="0.72"/>
+  <circle cx="760" cy="253" r="54" fill="#f8c95e"/>
+  <text x="600" y="640" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" fill="#ffffff">WSTAW ZDJĘCIE 5</text>
+  <text x="600" y="692" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#fff7ef">assets/photos/photo-5</text>
+</svg>

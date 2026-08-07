@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img" aria-label="Miejsce na Wasze zdjęcie">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0" stop-color="#302033"/>
+      <stop offset="0.5" stop-color="#8bb8ff"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#g)"/>
+  <g opacity="0.78">
+    <circle cx="245" cy="235" r="5" fill="#fff"/>
+    <circle cx="521" cy="164" r="4" fill="#fff"/>
+    <circle cx="786" cy="302" r="6" fill="#fff"/>
+    <circle cx="842" cy="606" r="4" fill="#fff"/>
+    <circle cx="168" cy="631" r="5" fill="#fff"/>
+  </g>
+  <rect x="155" y="306" width="690" height="520" rx="38" fill="#ffffff" opacity="0.82"/>
+  <path d="M272 694 L418 540 L532 656 L614 574 L749 694 Z" fill="#b9eadf"/>
+  <circle cx="672" cy="457" r="58" fill="#ffd166"/>
+  <text x="500" y="940" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" fill="#ffffff">WSTAW ZDJĘCIE 3</text>
+  <text x="500" y="1005" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#fff7ef">assets/photos/photo-3</text>
+</svg>

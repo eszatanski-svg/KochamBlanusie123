@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 lata razem</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="sky-canvas" aria-hidden="true"></canvas>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <div class="cursor-heart" aria-hidden="true"></div>
+
+  <header class="topbar" aria-label="Nawigacja strony">
+    <a class="brand" href="#start" aria-label="Wróć na początek">
+      <span class="brand-mark">3</span>
+      <span class="brand-text">lata razem</span>
+    </a>
+    <nav>
+      <a href="#historia">Historia</a>
+      <a href="#zadania">Zadania</a>
+      <a href="#list">List</a>
+      <a href="#niespodzianka">Prezent</a>
+    </nav>
+    <button class="icon-button music-toggle" type="button" aria-label="Włącz muzykę" title="Muzyka">
+      <span class="music-icon">♪</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow">09.08.2023 - 09.08.2026</p>
+        <h1>Dla Ciebie, Kochanie</h1>
+        <p class="lead">
+          Trzy lata małych chwil, wielkich rozmów, śmiechu, planów i tego jednego uczucia,
+          które dalej wybieram każdego dnia.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-scroll="#historia">
+            Otwórz naszą historię
+          </button>
+          <button class="ghost-button" type="button" data-scroll="#zadania">
+            Zacznij zadania
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-label="Miejsca na Wasze zdjęcia">
+        <figure class="polaroid polaroid-main">
+          <img src="assets/photos/photo-1.jpg" alt="Nasz ulubiony wspólny kadr">
+          <figcaption>nasz ulubiony kadr</figcaption>
+        </figure>
+        <figure class="polaroid polaroid-small">
+          <img src="assets/photos/photo-2.jpg" alt="Mała chwila z naszej historii">
+          <figcaption>mała chwila</figcaption>
+        </figure>
+        <figure class="polaroid polaroid-tiny">
+          <img src="assets/photos/image11.jpg" alt="Wasze wspólne zdjęcie numer 3">
+          <figcaption>duży uśmiech</figcaption>
+        </figure>
+      </div>
+
+      <div class="days-panel" aria-live="polite">
+        <span class="days-number" id="days-together">0</span>
+        <span class="days-label">dni razem</span>
+        <span class="days-sub" id="time-together">liczę każdą chwilę...</span>
+      </div>
+    </section>
+
+    <section class="section intro-band">
+      <div class="section-inner split">
+        <div>
+          <p class="section-kicker">Zanim klikniesz dalej</p>
+          <h2>To nie jest zwykła strona.</h2>
+        </div>
+        <p>
+          To mały prezent do odkrywania: wspomnienia, zadania, kupony, list i ukryta niespodzianka
+          otwierana kodem z Waszej daty.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="historia">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Nasza historia</p>
+          <h2>Kilka rozdziałów, które lubię najbardziej</h2>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline" id="timeline"></div>
+          <article class="memory-preview" id="memory-preview">
+            <img src="assets/photos/start-barbie.jpg" alt="Podgląd wspomnienia Barbie">
+            <div>
+              <p class="memory-date">09.08.2023</p>
+              <h3>Zaczęliśmy być razem - Barbie</h3>
+              <p>
+                Ten dzień zmienił zwykły kalendarz w coś, do czego chce się wracać.
+                Różowy klimat pasuje tu aż za dobrze.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section games-section" id="zadania">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Mini zadania</p>
+          <h2>Odblokuj po kolei wszystkie słodkie rzeczy</h2>
+        </div>
+
+        <div class="progress-shell" aria-label="Postęp zadań">
+          <div class="progress-top">
+            <span>Postęp</span>
+            <strong id="progress-label">0 / 5</strong>
+          </div>
+          <div class="progress-track">
+            <span class="progress-fill" id="progress-fill"></span>
+          </div>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-panel" data-game="heart">
+            <div class="game-panel-head">
+              <span class="game-number">01</span>
+              <h3>Serce bije szybciej</h3>
+            </div>
+            <p>Kliknij serduszko 30 razy.</p>
+            <button class="heart-tap" id="heart-tap" type="button" aria-label="Kliknij serce">
+              <span id="heart-count">0</span>
+            </button>
+            <p class="game-message" id="heart-message">Jeszcze 30 kliknięć.</p>
+          </article>
+
+          <article class="game-panel wide" data-game="memory">
+            <div class="game-panel-head">
+              <span class="game-number">02</span>
+              <h3>Memory ze wspomnieniami</h3>
+            </div>
+            <p>Znajdź wszystkie pary zdjęć.</p>
+            <div class="memory-board" id="memory-board" aria-label="Gra memory"></div>
+            <div class="game-row">
+              <button class="mini-button" id="restart-memory" type="button">Wymieszaj</button>
+              <p class="game-message" id="memory-message">Pary: 0 / 6</p>
+            </div>
+          </article>
+
+          <article class="game-panel" data-game="quiz">
+            <div class="game-panel-head">
+              <span class="game-number">03</span>
+              <h3>Pytanie kontrolne</h3>
+            </div>
+            <p id="quiz-question">Gdzie była nasza pierwsza randka?</p>
+            <div class="quiz-options" id="quiz-options"></div>
+            <p class="game-message" id="quiz-message">Wybierz odpowiedź.</p>
+          </article>
+
+          <article class="game-panel" data-game="slider">
+            <div class="game-panel-head">
+              <span class="game-number">04</span>
+              <h3>Skala miłości</h3>
+            </div>
+            <p>Przesuń suwak do końca.</p>
+            <label class="range-label" for="love-range">
+              <span>Jak bardzo Cię kocham?</span>
+              <strong id="range-value">0%</strong>
+            </label>
+            <input id="love-range" class="love-range" type="range" min="0" max="100" value="0">
+            <p class="game-message" id="range-message">To jeszcze nawet nie początek.</p>
+          </article>
+
+          <article class="game-panel wide" data-game="wheel">
+            <div class="game-panel-head">
+              <span class="game-number">05</span>
+              <h3>Koło nagród</h3>
+            </div>
+            <p>Zakręć i zobacz, co wygrywasz.</p>
+            <div class="wheel-layout">
+              <div class="wheel-wrap">
+                <div class="wheel-pointer" aria-hidden="true"></div>
+                <div class="wheel" id="wheel" aria-label="Koło fortuny"></div>
+              </div>
+              <div class="wheel-side">
+                <button class="primary-button compact" id="spin-wheel" type="button">Zakręć</button>
+                <p class="game-message" id="wheel-message">Nagroda czeka.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="list">
+      <div class="section-inner letter-layout">
+        <div class="section-heading">
+          <p class="section-kicker">List</p>
+          <h2>Jedna wiadomość, którą warto przeczytać powoli</h2>
+          <button class="primary-button compact" id="write-letter" type="button">Przeczytaj list</button>
+        </div>
+        <article class="letter-paper" aria-live="polite">
+          <p id="letter-text"></p>
+          <span class="letter-caret" aria-hidden="true"></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section coupons-section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Kupony</p>
+          <h2>Małe rzeczy, które możesz odebrać kiedy chcesz</h2>
+        </div>
+        <div class="coupon-grid" id="coupon-grid"></div>
+      </div>
+    </section>
+
+    <section class="section lock-section" id="niespodzianka">
+      <div class="section-inner lock-layout">
+        <div>
+          <p class="section-kicker">Sekretna kłódka</p>
+          <h2>Wpisz kod z naszej daty</h2>
+          <p class="lock-hint">Podpowiedź: dzień, miesiąc i rok rocznicy bez kropek.</p>
+        </div>
+
+        <div class="lock-box" id="lock-box">
+          <div class="lock-icon" aria-hidden="true">
+            <span class="lock-shackle"></span>
+            <span class="lock-body"></span>
+          </div>
+          <label for="unlock-code">Kod</label>
+          <div class="code-row">
+            <input id="unlock-code" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="DDMMRRRR">
+            <button class="primary-button compact" id="unlock-button" type="button">Otwórz</button>
+          </div>
+          <p class="game-message" id="lock-message">Czeka za tym coś miłego.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale" id="final">
+      <div class="finale-inner">
+        <p class="section-kicker">Finał</p>
+        <h2>Dziękuję za najpiękniejsze 3 lata.</h2>
+        <p>
+          Za każdy dzień, w którym jesteś obok. Za śmiech, spokój, przytulanie, wygłupy,
+          rozmowy po nocach i wszystko, co jeszcze przed nami.
+        </p>
+        <figure class="final-photo">
+          <img src="assets/photos/final-photo.jpg" alt="Nasze ulubione wspólne zdjęcie w finale">
+          <figcaption>nasze ulubione zdjęcie</figcaption>
+        </figure>
+        <h3>Czy zostaniesz ze mną na kolejne lata?</h3>
+        <div class="yes-row">
+          <button class="primary-button yes-button" type="button">Tak</button>
+          <button class="primary-button yes-button" type="button">Tak, oczywiście</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="song" loop preload="auto">
+    <source src="assets/music/our-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

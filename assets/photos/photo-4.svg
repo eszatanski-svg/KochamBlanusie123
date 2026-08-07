@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Miejsce na Wasze zdjęcie">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7ef"/>
+      <stop offset="0.45" stop-color="#b9eadf"/>
+      <stop offset="1" stop-color="#f46b93"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <path d="M0 532 C166 421 279 528 428 449 C604 357 692 224 875 298 C1010 353 1078 471 1200 418 L1200 750 L0 750 Z" fill="#ffffff" opacity="0.42"/>
+  <rect x="250" y="165" width="700" height="350" rx="34" fill="#ffffff" opacity="0.78"/>
+  <path d="M600 421 C530 366 446 313 474 237 C492 188 562 189 600 238 C638 189 708 188 726 237 C754 313 670 366 600 421 Z" fill="#f46b93"/>
+  <text x="600" y="600" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" fill="#302033">WSTAW ZDJĘCIE 4</text>
+  <text x="600" y="655" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#6d5a70">assets/photos/photo-4</text>
+</svg>
